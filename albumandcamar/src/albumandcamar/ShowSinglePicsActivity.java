@@ -22,6 +22,7 @@ public class ShowSinglePicsActivity extends Activity {
 		setContentView(R.layout.show_single_pic_layout);
 		getIntentData();
 		setUpView();
+	//ceshi
 	}
 
 	private void getIntentData() {
