@@ -3,8 +3,12 @@
     <string name="app_name">albumandcamar</string>
     <string  name="album_btn">相册</string>
      <string  name="camra_btn">相机</string>
+     <string  name="samllvido_btn">录制小视频</string>
+     <string  name="voice_btn">录音</string>
      <string  name="album_name">相册</string>
       <string  name="camra_name">拍照</string>
+      <string name="camra_save_btn">保存</string>
+       <string name="camra_take_pic_btn">拍照</string>
       <string  name="select_album_pic_list">piclist</string>
       <string  name="select_album_pic_list_title">title</string>
        <string  name="select_album_pic_list_pos">pos</string>

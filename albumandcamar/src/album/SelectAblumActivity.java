@@ -1,4 +1,4 @@
-package albumandcamar;
+package album;
 
 import java.security.KeyStore.PrivateKeyEntry;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.Set;
 
 import com.example.albumandcamar.R;
 
-import albumandcamar.AlbumaAsycTask.AlbumDataCallBack;
+import album.AlbumaAsycTask.AlbumDataCallBack;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

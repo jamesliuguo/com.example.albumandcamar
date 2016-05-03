@@ -52,12 +52,12 @@
     </uses-permission>
 
     <application
-        android:name="albumandcamar.AlbumApplication"
+        android:name="album.AlbumApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="albumandcamar.MainActivity" >
+        <activity android:name="album.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,23 +65,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="albumandcamar.GrideViewActivity"
+            android:name="album.GrideViewActivity"
             android:icon="@null"
             android:label="@string/album_name"
-            android:parentActivityName="albumandcamar.SelectAblumActivity" >
+            android:parentActivityName="album.SelectAblumActivity" >
         </activity>
         <activity
-            android:name="albumandcamar.SelectAblumActivity"
+            android:name="album.SelectAblumActivity"
             android:icon="@null"
             android:label="@string/album_name"
-            android:parentActivityName="albumandcamar.MainActivity" >
+            android:parentActivityName="album.MainActivity" >
         </activity>
               <activity
-            android:name="albumandcamar.ShowSinglePicsActivity"
+            android:name="album.ShowSinglePicsActivity"
             android:icon="@null"
             android:label="@string/album_name"
-            android:parentActivityName="albumandcamar.GrideViewActivity" >
+            android:parentActivityName="album.GrideViewActivity" >
         </activity>
+        <activity
+            android:name="camar.CamraActivity"
+            android:icon="@null"
+            android:label="@string/camra_name"
+            ></activity>
         
     </application>
 

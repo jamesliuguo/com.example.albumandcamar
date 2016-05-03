@@ -1,4 +1,4 @@
-package albumandcamar;
+package album;
 
 import com.example.albumandcamar.R;
 import com.nostra13.universalimageloader.core.ImageLoader;

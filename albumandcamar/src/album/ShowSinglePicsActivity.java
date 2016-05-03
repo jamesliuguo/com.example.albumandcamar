@@ -1,11 +1,11 @@
-package albumandcamar;
+package album;
 
 import java.util.ArrayList;
 
 import com.example.albumandcamar.R;
 import com.viewpagerindicator.CirclePageIndicator;
 
-import albumandcamar.PicsViewPagerAdapter.OnItemOnCliclkLisener;
+import album.PicsViewPagerAdapter.OnItemOnCliclkLisener;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;

@@ -1,4 +1,4 @@
-package albumandcamar;
+package album;
 
 import android.content.Context;
 import android.util.AttributeSet;

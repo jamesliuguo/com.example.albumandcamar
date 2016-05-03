@@ -1,4 +1,4 @@
-package albumandcamar;
+package album;
 
 import java.io.File;
 import java.net.URI;

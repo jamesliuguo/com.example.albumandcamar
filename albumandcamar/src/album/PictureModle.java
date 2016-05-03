@@ -1,4 +1,4 @@
-package albumandcamar;
+package album;
 
 import java.io.Serializable;
 

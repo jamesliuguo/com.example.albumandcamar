@@ -17,6 +17,18 @@
         android:layout_gravity="center"
         android:text="@string/album_btn" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/album_camra_button_height"
+        android:text="@string/samllvido_btn" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/album_camra_button_height"
+         android:text="@string/voice_btn" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >

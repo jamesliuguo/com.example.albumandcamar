@@ -1,10 +1,14 @@
-package albumandcamar;
+package album;
 
 import java.util.ArrayList;
 
 import com.example.albumandcamar.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import android.R.bool;
+import android.animation.Animator;
+import android.animation.Animator.AnimatorListener;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.os.CountDownTimer;
 import android.support.v4.view.PagerAdapter;
@@ -24,6 +28,7 @@ public class PicsViewPagerAdapter extends PagerAdapter {
 	private ArrayList<View> views = new ArrayList<View>();
 	private Context mContext;
 	private ImageLoader imageLoader;
+	boolean isClicked = Boolean.FALSE;
 	private OnItemOnCliclkLisener onItemOnCliclkLisener;
 
 	public OnItemOnCliclkLisener getOnItemOnCliclkLisener() {
@@ -70,24 +75,22 @@ public class PicsViewPagerAdapter extends PagerAdapter {
 		views.add(chidrenView);
 		String url = pics.get(position).getImageUri();
 		imageLoader.displayImage(url, imageView);
+
 		chidrenView.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				// showPopupWindow(chidrenView);
 				showEditeImageDialog(chidrenView);
-				// onItemOnCliclkLisener.itemOnClick(position,
-				// pics.get(position));
 			}
 		});
 		return chidrenView;
 	}
 
 	// 编辑框显示show_bianji_layout
-	private void showEditeImageDialog(View chidrenView) {
+	private void showEditeImageDialog(final View chidrenView) {
 		final View view = chidrenView.findViewById(R.id.show_bianji_layout);
 		view.setVisibility(View.VISIBLE);
+		chidrenView.setTag(true);
 		showChildrenViews(view);
 		CountDownTimer downTimer = new CountDownTimer(3000, 1000) {
 
@@ -100,34 +103,38 @@ public class PicsViewPagerAdapter extends PagerAdapter {
 			@Override
 			public void onFinish() {
 				// TODO Auto-generated method stub
+				
 				dissmissChildrenViews(view);
-				//view.setVisibility(View.INVISIBLE);
+				// view.setVisibility(View.INVISIBLE);
 
 			}
 		};
 		downTimer.start();
 
 	}
-	//退出
-	private  void  dissmissChildrenViews(View view){
+
+	// 退出
+	private void dissmissChildrenViews(final View view) {
 		LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.show_bianji);
 		int count = linearLayout.getChildCount();
 		for (int i = 0; i < count; i++) {
-			linearLayout.getChildAt(i).animate().translationX(0).translationY(100).alpha(0f)
-					.setStartDelay(100 * i + 100).start();
-			;
+			linearLayout.getChildAt(i).animate().translationX(0).translationY(100).alpha(0f).setStartDelay(50 * i + 50)
+					.start();
+
 		}
+		//
+
 	}
 
-	
-	//进入
+	// 进入
 	private void showChildrenViews(View view) {
 
 		LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.show_bianji);
 		int count = linearLayout.getChildCount();
 		for (int i = 0; i < count; i++) {
-			linearLayout.getChildAt(i).animate().translationX(0).translationY(0).alpha(1f)
-					.setStartDelay(100 * i + 100).start();
+			linearLayout.getChildAt(i).animate().translationX(0).
+			translationY(0).alpha(1f).setStartDelay(50 * i + 50)
+					.start();
 			;
 		}
 

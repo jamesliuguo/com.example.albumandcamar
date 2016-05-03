@@ -1,11 +1,11 @@
-package albumandcamar;
+package album;
 
 import java.util.ArrayList;
 
 
 import com.example.albumandcamar.R;
 
-import albumandcamar.AlbumaAsycTask.AlbumDataCallBack;
+import album.AlbumaAsycTask.AlbumDataCallBack;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
