@@ -41,6 +41,7 @@ public class CamraActivity extends Activity implements SurfaceHolder.Callback, P
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.camra_activity_layout);
 		setUpView();
+		//test
 	}
 
 	private void setUpView() {
