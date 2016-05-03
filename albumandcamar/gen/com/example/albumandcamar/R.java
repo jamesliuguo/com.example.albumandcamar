@@ -362,17 +362,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int grideView=0x7f0a0007;
         public static final int imageView1=0x7f0a0006;
         public static final int imageView2=0x7f0a0009;
-        public static final int indicator=0x7f0a0010;
+        public static final int imageView3=0x7f0a0011;
+        public static final int indicator=0x7f0a0013;
         public static final int none=0x7f0a0000;
         public static final int pager_image_view=0x7f0a000e;
         public static final int progressBar1=0x7f0a0005;
         public static final int select_abulm_listview=0x7f0a000b;
+        public static final int show_bianji=0x7f0a0010;
+        public static final int show_bianji_layout=0x7f0a000f;
         public static final int textView1=0x7f0a0008;
         public static final int textView2=0x7f0a000a;
         public static final int top=0x7f0a0004;
         public static final int triangle=0x7f0a0001;
         public static final int underline=0x7f0a0002;
-        public static final int vPager=0x7f0a000f;
+        public static final int vPager=0x7f0a0012;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation=0x7f060000;
@@ -390,6 +393,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int mian_layout=0x7f030005;
         public static final int show_pager_adapter_item=0x7f030006;
         public static final int show_single_pic_layout=0x7f030007;
+        public static final int show_single_pic_options=0x7f030008;
     }
     public static final class string {
         public static final int album_btn=0x7f090001;

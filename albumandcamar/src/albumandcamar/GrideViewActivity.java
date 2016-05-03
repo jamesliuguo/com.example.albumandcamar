@@ -58,15 +58,15 @@ public class GrideViewActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// TODO Auto-generated method stub
-//				Intent  intent=new Intent(GrideViewActivity.this, 
-//						ShowSinglePicsActivity.class);
-//				ArrayList<PictureModle> list = (ArrayList<PictureModle>) getIntent()
-//						.getSerializableExtra(getResources().getString(R.string.select_album_pic_list));
-//				intent.putExtra(getResources().getString(R.string.select_album_pic_list),
-//						list);
-//				intent.putExtra(getResources().getString(R.string.select_album_pic_list_pos),
-//						position);
-//				startActivity(intent);
+				Intent  intent=new Intent(GrideViewActivity.this, 
+						ShowSinglePicsActivity.class);
+				ArrayList<PictureModle> list = (ArrayList<PictureModle>) getIntent()
+						.getSerializableExtra(getResources().getString(R.string.select_album_pic_list));
+				intent.putExtra(getResources().getString(R.string.select_album_pic_list),
+						list);
+				intent.putExtra(getResources().getString(R.string.select_album_pic_list_pos),
+						position);
+				startActivity(intent);
 				
 			}
 		});
